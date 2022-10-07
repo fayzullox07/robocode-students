@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Robocode Kids - Robocode oquvchilari, O'quvchilar uchun portfolio, Ishlar to'plami" />
+    <meta content="Nurullo Salaydinov" name="author" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <title>Bosh sahifa | Robocode Kids</title>
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="bg-white shadow-md z-50 transition-all duration-700 w-full fixed top-0 left-0 md:relative">
+            <div class="container mx-auto px-3 flex items-center justify-between">
+                <a href="/" class="navbar-brand">
+                    <img src="img/robocode-logo-png.png" class="w-40" alt="" />
+                </a>
+                <div
+                    class="navbar-links text-lg font-medium flex items-center justify-around w-full py-2 bg-white md:py-0 shadow-[0_-20px_15px_-20px_rgba(0,0,0,0.5)] fixed bottom-0 left-0 md:relative md:w-auto">
+                    <a href="/"
+                        class="text-black transition-all flex items-center flex-col md:flex-row gap-2 py-0 px-0 md:py-6 md:px-3 md:hover:bg-gray-100">
+                        <img src="img/icon/home.svg" class="w-6" alt="" />
+                        Bosh sahifa
+                    </a>
+                    <a href="/work.html"
+                        class="text-black opacity-60 hover:opacity-100 transition-all flex items-center gap-2 py-0 px-0 md:py-6 md:px-3 md:hover:bg-gray-100 flex-col md:flex-row">
+                        <img src="img/icon/task.svg" class="w-6" alt="" />
+                        Ishlar
+                    </a>
+                    <a href="/"
+                        class="text-black opacity-60 hover:opacity-100 transition-all flex items-center gap-2 py-0 px-0 md:py-6 md:px-3 md:hover:bg-gray-100 flex-col md:flex-row">
+                        <img src="img/icon/question-mark.png" class="w-6" alt="" />
+                        Yordam
+                    </a>
+                </div>
+                <div class="flex gap-3">
+                    <!-- <a href="#" 
+            class="block bg-blue-500 py-2 px-6
+            text-white rounded border border-blue-500
+            hover:bg-transparent
+            hover:text-blue-500
+            transition-all
+            ">Kirish</a>
+            <a href="#" 
+            class="block bg-transparent py-2 px-6
+            text-yellow-500 rounded border border-yellow-500
+            hover:bg-yellow-500
+            hover:text-white
+            transition-all
+            ">Ro'yxatdan o'tish</a> -->
+                    <div class="cursor-pointer relative">
+                        <div class="flex gap-2" onclick="toggleDropdown('navbar-dropdown')">
+                            <img src="img/icon/user-image.png" alt="user-image"
+                                class="border border-gray-300 p-1 rounded-full" />
+                            <img src="img/icon/arrow-down.svg" alt="arrow-down" />
+                        </div>
+                        <div class="absolute w-60 border border-gray-100 bg-white mt-4 shadow-md top-full rounded-lg right-px py-3 px-4 hidden z-50"
+                            id="navbar-dropdown">
+                            <a href="#" class="flex gap-3 hover:bg-gray-100 py-2 px-3">
+                                <img src="img/icon/user.svg" class="w-6" alt="" /> Mening
+                                Profilim
+                            </a>
+                            <hr />
+                            <a href="#" class="flex gap-3 hover:bg-gray-100 py-2 px-3">
+                                <img src="img/icon/task.svg" class="w-6" alt="" /> Mening
+                                ishlarim
+                            </a>
+                            <hr />
+                            <a href="#" class="flex gap-3 hover:bg-gray-100 py-2 px-3">
+                                <img src="img/icon/plus.png" class="w-6" alt="" /> Ish
+                                qo'shish
+                            </a>
+                            <hr />
+                            <a href="#" class="flex gap-3 hover:bg-gray-100 py-2 px-3 text-red-500">
+                                <img src="img/icon/logout.svg" class="w-6" alt="" /> Hisobdan
+                                chiqish
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="preLoader" class="fixed top-0 left-0
+    w-full h-screen bg-black z-50
+    flex items-center justify-center gap-3
+    ">
+        <div class="border-[15px] border-t-blue-500 border-b-blue-500 bg-white rounded-full w-24 h-24 animate-spin"></div>
+        <div class="border-[15px] border-t-blue-500 border-b-blue-500 bg-white rounded-full w-24 h-24 animate-spin"></div>
+        <div class="border-[15px] border-t-blue-500 border-b-blue-500 bg-white rounded-full w-24 h-24 animate-spin"></div>
+    </div>
+    <main class="bg-[#E0E0EC] px-3 pt-24 pb-8 md:pt-6 md:pb-6">
+        <div class="container mx-auto">
+            <div class="flex items-center flex-col md:flex-row justify-between p-5 h-auto bg-white rounded-[15px]">
+                <div class="swiper home-swiper h-[200px] md:h-[300px] w-full sm:w-[75%] md:w-[95%]">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/home-card.png" class="w-full h-[200px] md:h-[300px] rounded-[15px]" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/home-card.png" class="w-full h-[200px] md:h-[300px] rounded-[15px]" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/home-card.png" class="w-full h-[200px] md:h-[300px] rounded-[15px]" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="p-5">
+                    <h1 class="text-2xl font-medium">Dribbble Russia VK Community officially launched!</h1>
+                    <p class="my-3">Send your portfolio to our manager on e-mail and get a chance to be a part of our
+                        new big Dribbblers group!</p>
+                    <p>Aug 14, 2020</p>
+                </div>
+            </div>
+            <div class="text-4xl font-semibold text-center md:text-left my-7">
+                <h1>Eng yaxshi ishlar</h1>
+            </div>
+            <!-- top works images -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-5">
+                <div class="shadow-md">
+                    <a href="#!" target="__blank">
+                        <img src="img/top-work/work-1.png" class="w-full h-full transition-all duration-300 hover:scale-[1.05]" alt="">
+                    </a>
+                </div>
+                <div class="shadow-md">
+                    <a href="#!" target="__blank">
+                        <img src="img/top-work/work-2.png" class="w-full h-full transition-all duration-300 hover:scale-[1.05]" alt="">
+                    </a>
+                </div>
+                <div class="shadow-md">
+                    <a href="#!" target="__blank">
+                        <img src="img/top-work/work-3.png" class="w-full h-full transition-all duration-300 hover:scale-[1.05]" alt="">
+                    </a>
+                </div>
+                <div class="shadow-md">
+                    <a href="#!" target="__blank">
+                        <img src="img/top-work/work-4.png" class="w-full h-full transition-all duration-300 hover:scale-[1.05]" alt="">
+                    </a>
+                </div>
+                <div class="shadow-md">
+                    <a href="#!" target="__blank">
+                        <img src="img/top-work/work-5.png" class="w-full h-full transition-all duration-300 hover:scale-[1.05]" alt="">
+                    </a>
+                </div>
+                <div class="shadow-md">
+                    <a href="#!" target="__blank">
+                        <img src="img/top-work/work-6.png" class="w-full h-full transition-all duration-300 hover:scale-[1.05]" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- end top works images -->
+            <div class="text-4xl font-semibold text-center md:text-left my-7">
+                <h1>"The best student"</h1>
+            </div>
+            <!-- top students -->
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-2">
+                <!-- student -->
+                <div class="flex items-center gap-3 bg-white rounded-lg py-3 px-5">
+                    <a href="#">
+                        <img src="img/top-student/student-1.png" class="w-24 rounded-full p-1 border border-gray-500" alt="Not Found">
+                    </a>
+                    <div class="full_name">
+                        <a href="#" class="text-md md:text-xl font-medium hover:underline">Abdulloh Abdujabborov</a>
+                        <h4 class="text-medium text-sm md:text-md">Full Stack Web Developer</h4>
+                    </div>
+                </div>
+                <!-- end student -->
+                <!-- student -->
+                <div class="flex items-center gap-3 bg-white rounded-lg py-3 px-5">
+                    <a href="#">
+                        <img src="img/top-student/student-2.png" class="w-24 rounded-full p-1 border border-gray-500" alt="Not Found">
+                    </a>
+                    <div class="full_name">
+                        <a href="#" class="text-md md:text-xl font-medium hover:underline">Abdulloh Abdujabborov</a>
+                        <h4 class="text-medium text-sm md:text-md">Full Stack Web Developer</h4>
+                    </div>
+                </div>
+                <!-- end student -->
+                <!-- student -->
+                <div class="flex items-center gap-3 bg-white rounded-lg py-3 px-5">
+                    <a href="#">
+                        <img src="img/top-student/student-3.png" class="w-24 rounded-full p-1 border border-gray-500" alt="Not Found">
+                    </a>
+                    <div class="full_name">
+                        <a href="#" class="text-md md:text-xl font-medium hover:underline">Abdulloh Abdujabborov</a>
+                        <h4 class="text-medium text-sm md:text-md">Full Stack Web Developer</h4>
+                    </div>
+                </div>
+                <!-- end student -->
+                <!-- student -->
+                <div class="flex items-center gap-3 bg-white rounded-lg py-3 px-5">
+                    <a href="#">
+                        <img src="img/top-student/student-4.png" class="w-24 rounded-full p-1 border border-gray-500" alt="Not Found">
+                    </a>
+                    <div class="full_name">
+                        <a href="#" class="text-md md:text-xl font-medium hover:underline">Abdulloh Abdujabborov</a>
+                        <h4 class="text-medium text-sm md:text-md">Full Stack Web Developer</h4>
+                    </div>
+                </div>
+                <!-- end student -->
+                <!-- student -->
+                <div class="flex items-center gap-3 bg-white rounded-lg py-3 px-5">
+                    <a href="#">
+                        <img src="img/top-student/student-5.png" class="w-24 rounded-full p-1 border border-gray-500" alt="Not Found">
+                    </a>
+                    <div class="full_name">
+                        <a href="#" class="text-md md:text-xl font-medium hover:underline">Abdulloh Abdujabborov</a>
+                        <h4 class="text-medium text-sm md:text-md">Full Stack Web Developer</h4>
+                    </div>
+                </div>
+                <!-- end student -->
+                <!-- student -->
+                <div class="flex items-center gap-3 bg-white rounded-lg py-3 px-5">
+                    <a href="#">
+                        <img src="img/top-student/student-6.png" class="w-24 rounded-full p-1 border border-gray-500" alt="Not Found">
+                    </a>
+                    <div class="full_name">
+                        <a href="#" class="text-md md:text-xl font-medium hover:underline">Abdulloh Abdujabborov</a>
+                        <h4 class="text-medium text-sm md:text-md">Full Stack Web Developer</h4>
+                    </div>
+                </div>
+                <!-- end student -->
+            </div>
+            <!-- end top students -->
+            <div class="text-4xl font-semibold text-center md:text-left my-7">
+                <h1>O'quvchilar reytingi</h1>
+            </div>
+            <!-- student rating -->
+            <div class="w-full py-2 px-4 rounded-xl bg-[rgba(252,194,27,0.7)] flex items-center
+            justify-between mb-3
+            shadow-[0_0_20px_5px_rgba(255,255,255,0.4)] relative
+            ">
+                <div class="flex items-center gap-3">
+                    <img src="img/top-student/student-1.png" class="rounded-full w-12" alt="">
+                    <div class="full_name">
+                        <h1 class="text-xl font-medium">Avazbek Nurmuhammedov</h1>
+                    </div>
+                </div>
+                <div class="hidden lg:flex absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:flex items-center">
+                    <div class="mr-16 ml-10 flex items-center gap-2">
+                        <img src="img/icon/heart.png" class="w-6" alt="">
+                        <h4 class="text-md font-bold">400</h4>
+                    </div>
+                    <div class="mr-5 flex items-center gap-2">
+                        <img src="img/icon/task.svg" class="w-7" alt="">
+                        <h4 class="text-md font-bold">20+</h4>
+                    </div>
+                </div>
+                <img src="img/rating-icon/first.svg" class="w-12" alt="">
+            </div>
+            <!-- end student rating -->
+            <!-- student rating -->
+            <div class="w-full py-2 px-4 rounded-xl bg-[#ccc] flex items-center
+            justify-between mb-3
+            shadow-[0_0_20px_5px_rgba(255,255,255,0.4)] relative
+            ">
+                <div class="flex items-center gap-3">
+                    <img src="img/top-student/student-2.png" class="rounded-full w-12" alt="">
+                    <div class="full_name">
+                        <h1 class="text-xl font-medium">Abdulloh G'aniyev</h1>
+                    </div>
+                </div>
+                <div class="hidden lg:flex absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:flex items-center">
+                    <div class="mr-16 ml-10 flex items-center gap-2">
+                        <img src="img/icon/heart.png" class="w-6" alt="">
+                        <h4 class="text-md font-bold">400</h4>
+                    </div>
+                    <div class="mr-5 flex items-center gap-2">
+                        <img src="img/icon/task.svg" class="w-7" alt="">
+                        <h4 class="text-md font-bold">20+</h4>
+                    </div>
+                </div>
+                <img src="img/rating-icon/second.svg" class="w-12" alt="">
+            </div>
+            <!-- end student rating -->
+            <div class="w-full py-2 px-4 rounded-xl bg-[rgba(248,161,67,0.5)] flex items-center
+            justify-between mb-3
+            shadow-[0_0_20px_5px_rgba(255,255,255,0.4)] relative
+            ">
+                <div class="flex items-center gap-3">
+                    <img src="img/top-student/student-3.png" class="rounded-full w-12" alt="">
+                    <div class="full_name">
+                        <h1 class="text-xl font-medium">Muslimbek Karimov</h1>
+                    </div>
+                </div>
+                <div class="hidden lg:flex absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:flex items-center">
+                    <div class="mr-16 ml-10 flex items-center gap-2">
+                        <img src="img/icon/heart.png" class="w-6" alt="">
+                        <h4 class="text-md font-bold">400</h4>
+                    </div>
+                    <div class="mr-5 flex items-center gap-2">
+                        <img src="img/icon/task.svg" class="w-7" alt="">
+                        <h4 class="text-md font-bold">20+</h4>
+                    </div>
+                </div>
+                <img src="img/rating-icon/third.svg" class="w-12" alt="">
+            </div>
+            <!-- end student rating -->
+            <!-- student rating -->
+            <div class="w-full py-2 px-4 rounded-xl bg-[#bbb] flex items-center
+            justify-between mb-3
+            shadow-[0_0_20px_5px_rgba(255,255,255,0.4)] relative
+            ">
+                <div class="flex items-center gap-3">
+                    <img src="img/top-student/student-4.png" class="rounded-full w-12" alt="">
+                    <div class="full_name">
+                        <h1 class="text-xl font-medium">Karimbek Abdullayev</h1>
+                    </div>
+                </div>
+                <div class="hidden lg:flex absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:flex items-center">
+                    <div class="mr-16 ml-10 flex items-center gap-2">
+                        <img src="img/icon/heart.png" class="w-6" alt="">
+                        <h4 class="text-md font-bold">400</h4>
+                    </div>
+                    <div class="mr-5 flex items-center gap-2">
+                        <img src="img/icon/task.svg" class="w-7" alt="">
+                        <h4 class="text-md font-bold">20+</h4>
+                    </div>
+                </div>
+                <h1 class="text-xl mr-3 font-medium">4th</h1>
+            </div>
+            <!-- end student rating -->
+            <!-- student rating -->
+            <div class="w-full py-2 px-4 rounded-xl bg-[#bbb] flex items-center
+            justify-between mb-3
+            shadow-[0_0_20px_5px_rgba(255,255,255,0.4)] relative
+            ">
+                <div class="flex items-center gap-3">
+                    <img src="img/top-student/student-5.png" class="rounded-full w-12" alt="">
+                    <div class="full_name">
+                        <h1 class="text-xl font-medium">Avazbek Ortiqov</h1>
+                    </div>
+                </div>
+                <div class="hidden lg:flex absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:flex items-center">
+                    <div class="mr-16 ml-10 flex items-center gap-2">
+                        <img src="img/icon/heart.png" class="w-6" alt="">
+                        <h4 class="text-md font-bold">400</h4>
+                    </div>
+                    <div class="mr-5 flex items-center gap-2">
+                        <img src="img/icon/task.svg" class="w-7" alt="">
+                        <h4 class="text-md font-bold">20+</h4>
+                    </div>
+                </div>
+                <h1 class="text-xl mr-3 font-medium">5th</h1>
+            </div>
+            <!-- end student rating -->
+            <!-- student rating -->
+            <div class="w-full py-2 px-4 rounded-xl bg-[#bbb] flex items-center
+            justify-between mb-3
+            shadow-[0_0_20px_5px_rgba(255,255,255,0.4)] relative
+            ">
+                <div class="flex items-center gap-3">
+                    <img src="img/top-student/student-2.png" class="rounded-full w-12" alt="">
+                    <div class="full_name">
+                        <h1 class="text-xl font-medium">Avazbek Ortiqov</h1>
+                    </div>
+                </div>
+                <div class="hidden lg:flex absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:flex items-center">
+                    <div class="mr-16 ml-10 flex items-center gap-2">
+                        <img src="img/icon/heart.png" class="w-6" alt="">
+                        <h4 class="text-md font-bold">400</h4>
+                    </div>
+                    <div class="mr-5 flex items-center gap-2">
+                        <img src="img/icon/task.svg" class="w-7" alt="">
+                        <h4 class="text-md font-bold">20+</h4>
+                    </div>
+                </div>
+                <h1 class="text-xl mr-3 font-medium">6th</h1>
+            </div>
+            <!-- end student rating -->
+            <!-- student rating -->
+            <div class="w-full py-2 px-4 rounded-xl bg-[#bbb] flex items-center
+            justify-between mb-3
+            shadow-[0_0_20px_5px_rgba(255,255,255,0.4)] relative
+            ">
+                <div class="flex items-center gap-3">
+                    <img src="img/top-student/student-6.png" class="rounded-full w-12" alt="">
+                    <div class="full_name">
+                        <h1 class="text-xl font-medium">Avazbek Ortiqov</h1>
+                    </div>
+                </div>
+                <div class="hidden lg:flex absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:flex items-center">
+                    <div class="mr-16 ml-10 flex items-center gap-2">
+                        <img src="img/icon/heart.png" class="w-6" alt="">
+                        <h4 class="text-md font-bold">400</h4>
+                    </div>
+                    <div class="mr-5 flex items-center gap-2">
+                        <img src="img/icon/task.svg" class="w-7" alt="">
+                        <h4 class="text-md font-bold">20+</h4>
+                    </div>
+                </div>
+                <h1 class="text-xl mr-3 font-medium">7th</h1>
+            </div>
+            <!-- end student rating -->
+            <!-- student rating -->
+            <div class="w-full py-2 px-4 rounded-xl bg-[#bbb] flex items-center
+            justify-between mb-3
+            shadow-[0_0_20px_5px_rgba(255,255,255,0.4)] relative
+            ">
+                <div class="flex items-center gap-3">
+                    <img src="img/top-student/student-1.png" class="rounded-full w-12" alt="">
+                    <div class="full_name">
+                        <h1 class="text-xl font-medium">Avazbek Ortiqov</h1>
+                    </div>
+                </div>
+                <div class="hidden lg:flex absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:flex items-center">
+                    <div class="mr-16 ml-10 flex items-center gap-2">
+                        <img src="img/icon/heart.png" class="w-6" alt="">
+                        <h4 class="text-md font-bold">400</h4>
+                    </div>
+                    <div class="mr-5 flex items-center gap-2">
+                        <img src="img/icon/task.svg" class="w-7" alt="">
+                        <h4 class="text-md font-bold">20+</h4>
+                    </div>
+                </div>
+                <h1 class="text-xl mr-3 font-medium">8th</h1>
+            </div>
+            <!-- end student rating -->
+            <!-- student rating -->
+            <div class="w-full py-2 px-4 rounded-xl bg-[#bbb] flex items-center
+            justify-between mb-3
+            shadow-[0_0_20px_5px_rgba(255,255,255,0.4)] relative
+            ">
+                <div class="flex items-center gap-3">
+                    <img src="img/top-student/student-2.png" class="rounded-full w-12" alt="">
+                    <div class="full_name">
+                        <h1 class="text-xl font-medium">Avazbek Ortiqov</h1>
+                    </div>
+                </div>
+                <div class="hidden lg:flex absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:flex items-center">
+                    <div class="mr-16 ml-10 flex items-center gap-2">
+                        <img src="img/icon/heart.png" class="w-6" alt="">
+                        <h4 class="text-md font-bold">400</h4>
+                    </div>
+                    <div class="mr-5 flex items-center gap-2">
+                        <img src="img/icon/task.svg" class="w-7" alt="">
+                        <h4 class="text-md font-bold">20+</h4>
+                    </div>
+                </div>
+                <h1 class="text-xl mr-3 font-medium">9th</h1>
+            </div>
+            <!-- end student rating -->
+            <!-- student rating -->
+            <div class="w-full py-2 px-4 rounded-xl bg-[#bbb] flex items-center
+            justify-between mb-3
+            shadow-[0_0_20px_5px_rgba(255,255,255,0.4)] relative
+            ">
+                <div class="flex items-center gap-3">
+                    <img src="img/top-student/student-3.png" class="rounded-full w-12" alt="">
+                    <div class="full_name">
+                        <h1 class="text-xl font-medium">Avazbek Ortiqov</h1>
+                    </div>
+                </div>
+                <div class="hidden lg:flex absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] md:flex items-center">
+                    <div class="mr-16 ml-10 flex items-center gap-2">
+                        <img src="img/icon/heart.png" class="w-6" alt="">
+                        <h4 class="text-md font-bold">400</h4>
+                    </div>
+                    <div class="mr-5 flex items-center gap-2">
+                        <img src="img/icon/task.svg" class="w-7" alt="">
+                        <h4 class="text-md font-bold">20+</h4>
+                    </div>
+                </div>
+                <h1 class="text-xl mr-3 font-medium">10th</h1>
+            </div>
+            <!-- end student rating -->
+            <div class="text-4xl font-semibold text-center md:text-left my-10">
+                <h1>Aloqa</h1>
+            </div>
+            <div id="contact" class="grid grid-cols-1 md:grid-cols-2 overflow-hidden">
+                <div id="rotate-img" class="rotate-[-40deg] translate-x-[0] md:translate-x-[-90px] transition-all duration-500">
+                    <img src="img/contact.png" class="w-full" alt="">
+                </div>
+                <form class="w-full p-5 pt-10 md:pt-10 lg:pt-32">
+                    <!-- input -->
+                    <input type="text"
+                    class="w-full rounded-lg h-14 block outline-0 pl-5 mb-5"
+                    placeholder="Ism Familya*"
+                    required name="name"
+                    >
+                    <!-- input -->
+                    <input type="text"
+                    pattern="[0-9]{2}[0-9]{3}[0-9]{4}"
+                    class="w-full rounded-lg h-14 block outline-0 pl-5 mb-5"
+                    placeholder="Telefon raqam*"
+                    required name="phone"
+                    >
+                    <!-- input -->
+                    <!-- textarea -->
+                    <textarea class="w-full h-40 max-h-[300px] min-h-[100px] rounded-lg h-14 block outline-0 pt-5 pl-5 mb-5" placeholder="Habar*" name="message" required></textarea>
+                    <!-- textarea -->
+                    <button class="bg-[#FDC904] py-3 w-full rounded-lg text-white text-xl my-2 border">Yuborish</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="pb-24 lg:pb-3 bg-white py-3 px-3 shadow-[0_-10px_15px_-15px_rgba(0,0,0,0.5)]">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between text-center">
+            <div class="social-account flex items-center gap-5 my-3">
+                <a href="#">
+                    <img src="img/icon/instagram.png" class="w-8" alt="" />
+                </a>
+                <a href="#">
+                    <img src="img/icon/telegram.png" class="w-8" alt="" />
+                </a>
+                <a href="#">
+                    <img src="img/icon/youtube.png" class="w-8" alt="" />
+                </a>
+            </div>
+            <p class="font-medium my-3">
+                © 2022 - Barcha xuquqlar litsenziyalangan
+            </p>
+            <p class="font-medium my-3">Robocode o'quvchilari uchun</p>
+        </div>
+    </footer>
+
+    <a href="#"
+        class="fixed z-40 right-0 bottom-24 bg-white p-2 rounded-full shadow-[0_5px_15px_0_rgba(0,0,0,0.5)] translate-x-full"
+        id="toTop">
+        <img src="img/icon/arrowhead-up.svg" width="30px" alt="" />
+    </a>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".home-swiper", {
+            loop: true,
+            effect: 'coverflow',
+            autoplay: {
+                delay: 3000,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            }
+        });
+    </script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
