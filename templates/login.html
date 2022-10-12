@@ -14,7 +14,7 @@
 
     <!-- Form -->
     <div class="container mx-auto px-3 md:px-8 mt-20 mb-20 md:mt-15">
-        <form class="lg:w-1/2 md:w-1/1 bg-white shadow-lg rounded px-3 md:px-8 p-3 pb-8 mx-auto" method="POST" action="">
+        <form autocomplete="off" class="lg:w-1/2 md:w-1/1 bg-white shadow-lg rounded px-3 md:px-8 p-3 pb-8 mx-auto" method="POST" action="">
             {% csrf_token %}
             <div class="flex justify-center">
                 <a href="/" class="navbar-brand">
@@ -42,7 +42,7 @@
                 <p id="messages">{{message}}</p>
             {% endfor %}
                 
-            <a href="{% url 'main:register' %}"><p class="text-right text-blue-500">Ro'yxatdan o'tmaganmisiz ?</p></a>
+            <a href=""><p class="text-right text-blue-500">Ro'yxatdan o'tmaganmisiz ?</p></a>
             <div class="flex items-center justify-between">
                 <button
                     class="bg-[#FDC904] w-full text-white font-bold py-3 px-4 mt-10 rounded focus:outline-none focus:shadow-outline">
